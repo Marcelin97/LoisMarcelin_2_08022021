@@ -28,15 +28,20 @@
     <!--main content-->
     <main>
       <!--search bar-->
-      <header>
+      <section>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-      </header>
-      <form>
-        <!--fontawesome code |position icon-->
-        <span class="position_icon"><img src="/assets/images/icon/map-marker-alt-solid.svg" height="15" width="15"></span>
-        <!--fontawesome code |position icon-->
-        <input type="text" placeholder="Marseille, France" />
+      </section>
+      <form class="form_search" action="sample_page_handler.html" method="GET">
+        <!--position icon-->
+        <span class="form_search_icon" type="image" id="image" alt="position icon"><!--add icon--></span>
+        <!--position icon-->
+        <input
+          id="Recherche_city"
+          name="Recherche"
+          type="text"
+          placeholder="Marseille, France"
+        />
         <button>Rechercher</button>
       </form>
       <!-- end of search bar-->
