@@ -28,22 +28,25 @@
     <!--main content-->
     <main>
       <!--search bar-->
-      <section>
+      <section id="search_">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
+
+        <form action="#" method="POST">
+          <label for="search"><!--add icon--></label>
+          <input
+            id="search"
+            name="search"
+            type="text"
+            placeholder="Marseille, France"
+          />
+          <button type="submit">
+            <!--add icon-->
+            <span>Rechercher</span>
+          </button>
+        </form>
       </section>
-      <form class="form_search" action="sample_page_handler.html" method="GET">
-        <!--position icon-->
-        <span class="form_search_icon" type="image" id="image" alt="position icon"><!--add icon--></span>
-        <!--position icon-->
-        <input
-          id="Recherche_city"
-          name="Recherche"
-          type="text"
-          placeholder="Marseille, France"
-        />
-        <button>Rechercher</button>
-      </form>
+
       <!-- end of search bar-->
       <!--end of main content-->
     </main>
