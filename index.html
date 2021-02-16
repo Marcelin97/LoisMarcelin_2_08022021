@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!--en tête de la page-->
+    <!--header-->
     <meta charset="utf-8" />
     <title>Reservia</title>
     <meta
@@ -9,11 +9,12 @@
       content="Reservia, l'hébergement de vos rêves à porter de clic"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--end of header-->
   </head>
   <body>
-    <!--corps de la page-->
+    <!--body-->
     <header>
-      <!--haut de la page-->
+      <!--page header-->
       <img src="./assets/images/logo/Reservia.svg" alt="Le logo de Réservia" />
       <a href="#">S'inscrire</a>
       <nav>
@@ -22,10 +23,35 @@
           <li><a href="#">Activités</a></li>
         </ul>
       </nav>
+      <!--end of page header-->
     </header>
-    <main></main>
+    <!--main content-->
+    <main>
+      <!--search bar-->
+      <section id="searchbar">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+
+        <form action="#" method="POST">
+          <label for="search"><!--add icon--></label>
+          <input
+            id="search"
+            name="search"
+            type="text"
+            placeholder="Marseille, France"
+          />
+          <button type="submit">
+            <!--add icon-->
+            <span>Rechercher</span>
+          </button>
+        </form>
+      </section>
+
+      <!-- end of search bar-->
+      <!--end of main content-->
+    </main>
     <footer>
-      <!--bas de la page-->
+      <!--footer-->
       <div>
         <h3>A propos</h3>
         <ul>
@@ -50,6 +76,8 @@
           <li><a href="#">Nous contacter</a></li>
         </ul>
       </div>
+      <!--end of footer-->
     </footer>
+    <!--end of body-->
   </body>
 </html>
