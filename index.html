@@ -4,7 +4,10 @@
     <!--header-->
     <meta charset="utf-8" />
     <title>Reservia</title>
-    <meta name="description" content="Reservia, l'hébergement de vos rêves à porter de clic" />
+    <meta
+      name="description"
+      content="Reservia, l'hébergement de vos rêves à porter de clic"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--end of header-->
   </head>
@@ -12,11 +15,13 @@
     <!--body-->
     <header>
       <!--page header-->
-      <img src="./assets/images/logo/Reservia.svg" alt="Le logo de Réservia" /> <a href="#">S'inscrire</a>
+      <img src="./assets/images/logo/Reservia.svg" alt="Le logo de Réservia" />
+      
       <nav>
         <ul>
           <li><a href="#">Hébergements</a></li>
           <li><a href="#">Activités</a></li>
+          <li><a href="#">S'inscrire</a></li>
         </ul>
       </nav>
       <!--end of page header-->
@@ -30,7 +35,12 @@
 
         <form action="#" method="POST">
           <label for="search"><!--add icon--></label>
-          <input id="search" name="search" type="text" placeholder="Marseille, France" />
+          <input
+            id="search"
+            name="search"
+            type="text"
+            placeholder="Marseille, France"
+          />
           <button type="submit">
             <!--add icon-->
             <span>Rechercher</span>
@@ -39,6 +49,7 @@
       </section>
 
       <!-- end of search bar-->
+      <!--filters-->
       <section id="filters">
         <h2>Filtres</h2>
         <ul>
@@ -47,8 +58,81 @@
           <li><!--add icon-->Romantique</li>
           <li><!--add icon-->Animaux autorisés</li>
         </ul>
-        <p><!--add icon-->Plus de 500 logements sont disponibles dans cette ville</p>
+        <p>
+          <!--add icon-->Plus de 500 logements sont disponibles dans cette ville
+        </p>
       </section>
+      <!--end of filters-->
+      <!--most popular-->
+      <div>
+        <section id="most_popular">
+          <h2>Les plus populaires <!--add icon--></h2>
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="/assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                  alt="Chambre verte avec grand miroir"
+                />
+              </figure>
+            </a>
+            <div>
+              <h3>Hôtel Le soleil du matin</h3>
+              <p>Nuit à partir de 128€</p>
+              <ul>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="/assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                  alt="Chambres d'hôtes avec lit marron et garde-corps acier"
+                />
+              </figure>
+            </a>
+            <div>
+              <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+              <p>Nuit à partir de 71€</p>
+              <ul>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <a href="#">
+              <figure>
+                <img
+                  src="/assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                  alt="Chambre avec tête de lit marron et lit blanc"
+                />
+              </figure>
+            </a>
+            <div>
+              <h3>Hôtel Tout bleu et Blanc</h3>
+              <p>Nuit à partir de 68€</p>
+              <ul>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+                <li><!--add icon--></li>
+              </ul>
+            </div>
+          </article>
+        </section>
+        <!--end of most popular-->
+      </div>
       <!--end of main content-->
     </main>
     <footer>
