@@ -12,19 +12,20 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/tools.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!--end of header-->
   </head>
   <body>
     <!--body-->
     <header>
       <!--page header-->
-      <img src="./assets/images/logo/Reservia.svg" alt="Le logo de Réservia" />
-      <a href="#">S'inscrire</a>
+      <img id="logo" src="./assets/images/logo/Reservia.svg" alt="Le logo de Réservia" />
+      <a class="inscription" href="#">S'inscrire</a>
       <nav>
-        <ul>
-          <li><a href="#">Hébergements</a></li>
-          <li><a href="#">Activités</a></li>
+        <ul class="nav">
+          <li><a class="Hébergements" href="#">Hébergements</a></li>
+          <li><a class="Activités" href="#">Activités</a></li>
         </ul>
       </nav>
       <!--end of page header-->
@@ -44,9 +45,9 @@
             type="text"
             placeholder="Marseille, France"
           />
-          <button type="submit">
+          <button class="submit" type="submit">
             <i class="fas fa-search"></i>
-            <span>Rechercher</span>
+            <span class="super-button">Rechercher</span>
           </button>
         </form>
       </section>
@@ -396,6 +397,7 @@
       <!--end of footer-->
     </footer>
     <!--end of body-->
+    <!--Kits fontawesome pour les icônes-->
     <script
       src="https://kit.fontawesome.com/3742821b69.js"
       crossorigin="anonymous"
