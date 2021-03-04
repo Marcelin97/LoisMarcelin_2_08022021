@@ -22,12 +22,12 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 .inscription {
     display: flex;
     flex-direction: row;
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: none;
     color: #0065FC;
 }
@@ -42,21 +42,26 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
-    font-weight: 600;
-    opacity: 0.7;
 }
-li:hover {
-    border-bottom: 3px solid #0065FC ;
-}
-.Hébergements {
-    text-decoration: none;
+
+.nav li.nav_Hébergements {
+    border-bottom: 2px solid #0065FC;
     color: #0065FC;
-    width: 50%;    
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
 }
-.Activités {
-    text-decoration: none;
+
+.nav li.nav_Activités {
+    border-bottom: 2px solid #F2F2F2;
     color: black;
-
-
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
 }
+
+.nav li a {
+    text-decoration: none;
+}
+
 /*end of header*/
