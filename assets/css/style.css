@@ -76,5 +76,7 @@ ul {
     text-decoration: none;
     color: black;
 }
-
+.nav li a:hover {
+    color: #0065FC;
+}
 /*end of header*/
