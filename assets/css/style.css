@@ -12,8 +12,6 @@
 /*police*/
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 10px 10px;
-    max-width: 576px;
 }
 
 /*header*/
@@ -24,6 +22,11 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5%;
+    margin-top: 10px;
+}
+
+#logo {
+    margin-left: 15px;
 }
 .inscription {
     display: flex;
@@ -31,11 +34,12 @@ header {
     font-weight: 700;
     text-decoration: none;
     color: #0065FC;
+    margin-right: 15px;
 }
 nav {
     flex-basis: 100%;
     margin-bottom: 2%;
-    margin-top: 2%;
+    margin-top: 30px;
 }
 ul {
     display: flex;
@@ -46,23 +50,31 @@ ul {
 }
 
 .nav li.nav_Hébergements {
-    border-bottom: 2px solid #0065FC;
-    color: #0065FC;
+    border-bottom: 3px solid #F2F2F2;
     width: 50%;
     text-align: center;
     padding-bottom: 10px;
+}
+
+.nav li.nav_Hébergements:hover {
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
 }
 
 .nav li.nav_Activités {
-    border-bottom: 2px solid #F2F2F2;
-    color: black;
+    border-bottom: 3px solid #F2F2F2;
     width: 50%;
     text-align: center;
     padding-bottom: 10px;
 }
 
+.nav li.nav_Activités:hover {
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
+}
 .nav li a {
     text-decoration: none;
+    color: black;
 }
 
 /*end of header*/
