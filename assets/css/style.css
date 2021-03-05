@@ -51,16 +51,15 @@ header nav ul li {
     justify-content: center;
     flex-basis: 50%;
     border-bottom: 3px solid grey;
-  }
-header nav ul li:hover {
-    color: #0065FC;
+}
+header nav ul li:hover, header nav li:hover > ul {
     border-bottom: 3px solid #0065FC;
+}
+header nav li:hover, header nav li:hover > a {
+    color: #0065FC;
 }
 header nav ul li a {
     padding-bottom: 15px;
     color: black;
-}
-header nav ul li a:hover {
-    color: #0065FC;
 }
 /*end of header*/
