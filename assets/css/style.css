@@ -24,57 +24,43 @@ header {
     margin-bottom: 5%;
     margin-top: 10px;
 }
-
 #logo {
     margin-left: 15px;
 }
-.inscription {
+header a {
     display: flex;
     flex-direction: row;
     font-weight: 700;
     text-decoration: none;
-    color: #0065FC;
     margin-right: 15px;
+    color: #0065FC;
 }
-nav {
+header nav {
     flex-basis: 100%;
-    margin-bottom: 2%;
     margin-top: 30px;
 }
-ul {
+header nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
 }
-
-.nav li.nav_Hébergements {
-    border-bottom: 3px solid #F2F2F2;
-    width: 50%;
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-.nav li.nav_Hébergements:hover {
+header nav ul li {
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+    border-bottom: 3px solid grey;
+  }
+header nav ul li:hover {
+    color: #0065FC;
     border-bottom: 3px solid #0065FC;
 }
-
-.nav li.nav_Activités {
-    border-bottom: 3px solid #F2F2F2;
-    width: 50%;
-    text-align: center;
+header nav ul li a {
     padding-bottom: 15px;
-}
-
-.nav li.nav_Activités:hover {
-    border-bottom: 3px solid #0065FC;
-}
-.nav li a {
-    text-decoration: none;
     color: black;
 }
-.nav li:hover a {
+header nav ul li a:hover {
     color: #0065FC;
 }
 /*end of header*/
