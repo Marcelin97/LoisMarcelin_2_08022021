@@ -53,30 +53,28 @@ ul {
     border-bottom: 3px solid #F2F2F2;
     width: 50%;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .nav li.nav_Hébergements:hover {
     border-bottom: 3px solid #0065FC;
-    color: #0065FC;
 }
 
 .nav li.nav_Activités {
     border-bottom: 3px solid #F2F2F2;
     width: 50%;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .nav li.nav_Activités:hover {
     border-bottom: 3px solid #0065FC;
-    color: #0065FC;
 }
 .nav li a {
     text-decoration: none;
     color: black;
 }
-.nav li a:hover {
+.nav li:hover a {
     color: #0065FC;
 }
 /*end of header*/
