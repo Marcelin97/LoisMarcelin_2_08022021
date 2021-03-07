@@ -23,6 +23,7 @@ header {
     align-items: center;
     margin-bottom: 5%;
     margin-top: 10px;
+    font-weight: 700;
 }
 #logo {
     margin-left: 15px;
@@ -30,27 +31,29 @@ header {
 header a {
     display: flex;
     flex-direction: row;
-    font-weight: 700;
     text-decoration: none;
     margin-right: 15px;
     color: #0065FC;
+    margin-top: 10px;
 }
 header nav {
     flex-basis: 100%;
     margin-top: 10px;
+
 }
 header nav ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
+
 }
 header nav ul li {
     display: flex;
     justify-content: center;
     flex-basis: 50%;
-    border-bottom: 3px solid grey;
+    border-bottom: 3px solid #f2f2f2;
+    font-weight: normal;
 }
 header nav ul li:hover{
     border-bottom: 3px solid #0065FC;
