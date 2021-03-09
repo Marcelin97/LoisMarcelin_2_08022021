@@ -105,11 +105,11 @@ header nav ul li a {
     flex-grow: 2;
     border-right: none;
     border-left: none;
+    color: black;
+    font-weight: 700;
 }
 #searchbar form input:focus {/*faire disparaître les bordures noires dans le champ de saisie active*/
     outline: none;
-    color: black;
-    font-weight: 700;
 }
 #searchbar form input::placeholder {
     color: black;
@@ -122,7 +122,7 @@ header nav ul li a {
     border-radius: 15px;
     color: white;
     position: relative;
-    right: 16px;
+    right: 16px; 
 }
 #searchbar button span {
     display: none; /*dans les autres media queries il faudra faire display: initial*/
