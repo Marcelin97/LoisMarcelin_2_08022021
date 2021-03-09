@@ -90,7 +90,7 @@ header nav ul li a {
 }
 #searchbar label {
     padding-top: 13px;
-    padding-bottom: 16px;
+    padding-bottom: 15.5px;
     padding-right: 16px;
     padding-left: 16px;
     background-color: #f2f2f2;
@@ -108,6 +108,8 @@ header nav ul li a {
 }
 #searchbar form input:focus {/*faire disparaître les bordures noires dans le champ de saisie active*/
     outline: none;
+    color: black;
+    font-weight: 700;
 }
 #searchbar form input::placeholder {
     color: black;
@@ -116,11 +118,11 @@ header nav ul li a {
 #searchbar button {
     padding: 7px;
     background-color: #0065FC;
-    border: 10px solid #0065fc;
+    border: 9.5px solid #0065fc;
     border-radius: 15px;
     color: white;
     position: relative;
-    right: 15px;
+    right: 16px;
 }
 #searchbar button span {
     display: none; /*dans les autres media queries il faudra faire display: initial*/
