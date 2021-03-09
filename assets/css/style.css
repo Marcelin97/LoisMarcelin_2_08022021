@@ -83,40 +83,47 @@ header nav ul li a {
     margin-left: 15px;
 }
 #searchbar form {
-    display: flex;
-    flex-wrap: nowrap;
     flex-basis: 100%;
     margin-left: 15px;
     margin-right: 15px;
     border-radius: 10px;
 }
 #searchbar label {
-    padding: 5px 5px 5px 5px;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
     background-color: #f2f2f2;
-    border: 10px solid #f2f2f2;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 15px 0px 0px 15px;
+    position: relative;
+    left: 5px;
 }
 #searchbar input {
-    padding: 10px;
+    padding: 15px;
     border-bottom: 1.5px solid #f2f2f2;
     border-top: 1.5px solid #f2f2f2;
     flex-grow: 2;
     border-right: none;
     border-left: none;
 }
-#searchbar form ::placeholder {
+#searchbar form input:focus {/*faire disparaître les bordures noires dans le champ de saisie active*/
+    outline: none;
+}
+#searchbar form input::placeholder {
     color: black;
     font-weight: 700;
 } 
 #searchbar button {
-    padding: 5px 5px 5px 5px;
+    padding: 7px;
     background-color: #0065FC;
     border: 10px solid #0065fc;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 15px;
     color: white;
+    position: relative;
+    right: 15px;
 }
 #searchbar button span {
-    display: none;/*dans les autres media queries il faudra faire display: initial*/
+    display: none; /*dans les autres media queries il faudra faire display: initial*/
 }
 /*end of search bar*/
 
