@@ -136,4 +136,50 @@ input::placeholder {
     display: none; /*dans les autres media queries il faudra faire display: initial*/
 }
 /*end of search bar*/
+/*filters*/
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+#filters h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  margin-left: 15px;  
+}
+#filters ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+#filters ul li { /* le texte et l'icone*/
+    border: 2px solid #d9d9d9;
+    border-radius: 15px;
+}
+#filters ul li i { /*l'icône*/
+    color: #0065fc;
+    width: 25px;
+    height: 35px;
+    margin-left: 15px;
+}
+#filters p .fas {
+    color: #0065fc;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    margin-right: 0.5rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+#filters > p {
+    margin-bottom: 15px;
+
+}
+
+/*end of filters*/
 
