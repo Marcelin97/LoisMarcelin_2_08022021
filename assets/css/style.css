@@ -76,32 +76,28 @@ header nav ul li a {
     display: flex;
     max-width: 350px;
     flex-basis: 100%;
-    border-radius: 10px;
+    border-radius: 50px;
+    height: 50px;
+    border: 2px solid #f2f2f2;
 }
 @-moz-document url-prefix() { /*Cibler l'apparence sur firefox*/
 #searchbar label {
-   border-top: 1.9px solid #f2f2f2;
+   border-top: 2px solid #f2f2f2;
 }
     }
 #searchbar label {
-    padding-top: 13px;
-    padding-bottom: 15.5px;
-    padding-right: 16px;
-    padding-left: 16px;
     background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
-    position: relative;
-    left: 5px;
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
     }
 #searchbar input {
-    padding: 15px;
-    border-bottom: 1.5px solid #f2f2f2;
-    border-top: 1.5px solid #f2f2f2;
-    flex-grow: 2;
-    border-right: none;
-    border-left: none;
     color:#101010;
     font-weight: 700;
+    flex: 1;
+    padding: 0 15px;
+    border: none;
 }
 #searchbar form input:focus {/*supprimer les bordures noires dans le champ input de saisie active*/
     outline: none;
@@ -115,13 +111,13 @@ input::placeholder {
     opacity: 1; /*pour que le noir dans firefox reste bien noir*/
 } 
 #searchbar button {
-    padding: 7px;
     background-color: #0065FC;
-    border: 9.5px solid #0065fc;
+    border:none;
     border-radius: 15px;
     color: white;
-    position: relative;
-    right: 16px; 
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
 }
 #searchbar button span {
     display: none; /*dans les autres media queries il faudra faire display: initial*/
