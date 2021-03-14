@@ -1,19 +1,11 @@
-/*Réinitialisation par défaut des valeurs de marge et de remplissage de tous les éléments HTML*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
 /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/
 * {
     box-sizing: border-box;
-}
-
-/*police*/
-body{
     font-family: 'Raleway', sans-serif;
 }
-
+section {
+    padding: 20px;
+}
 /*header*/
 header {
     display: flex;
@@ -75,16 +67,15 @@ header nav ul li a {
 #searchbar h1 {
     font-weight: 700;
     margin-bottom: 10px;
-    margin-left: 15px;
+    font-size: 1.2em;
 }
 #searchbar p {
     margin-bottom:20px;
-    margin-left: 15px;
 }
 #searchbar form {
+    display: flex;
+    max-width: 350px;
     flex-basis: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
     border-radius: 10px;
 }
 @-moz-document url-prefix() { /*Cibler l'apparence sur firefox*/
@@ -144,10 +135,9 @@ input::placeholder {
 #filters h2 {
     margin-bottom: 15px;
     font-weight: 700;
-    margin: 15px;
     display: flex;
 }
-#filters ul {
+#filters ul { /*le texte des filtres*/
     display: flex;
     flex-wrap: wrap;
     font-weight: 700;
@@ -160,10 +150,13 @@ input::placeholder {
     border-radius: 25px;
     display: flex;
     align-items: center;
-    margin-left: 15px;
     margin-bottom: 15px;
     padding-right: 15px;
     height: 2.5rem;
+}
+#filters ul li:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
 }
 #filters ul li i { /*l'icône*/
     color: #0065fc;
@@ -171,28 +164,28 @@ input::placeholder {
     border-radius: 30px;
     width: 40px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    right: 1px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
 }
 #filters p .fas {/*le i de info*/
     color: #0065fc;
-    width: 3rem;
-    height: 2.5rem;
-    border-radius: 30px;
-    margin-right: 0.5rem;
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 15px;
+    margin-right: 9px;
     border: 1.5px solid #d9d9d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
+    min-width: 1.7em;
+    line-height: 1.7em;
+    text-align: center;
+   
 }
 #filters p {
     display: flex;
     align-items: baseline;
     margin-bottom: 30px;
+    font-weight:100;
+    line-height: 1.7em;    
 }
 
 /*end of filters*/
