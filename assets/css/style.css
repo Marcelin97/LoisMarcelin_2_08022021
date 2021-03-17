@@ -200,9 +200,10 @@ input::placeholder {
 }
 #most_popular h2 {
     font-weight: 700;
+    font-size: 1.3em;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 15px;
+    margin-bottom: 30px;
 }
 #most_popular h2 i {
     color: black;
@@ -210,11 +211,23 @@ input::placeholder {
 #most_popular article {
     background-color: white;
     border-radius: 15px;
+    transform: scale(1);
+    transition: 0.3s;
+}
+#most_popular article:hover{
+    transform: scale(1.10)
 }
 #most_popular article a {
     text-decoration: none;
     display: flex;
-    margin: 10px;
+    margin-bottom: 10px;
+}
+#most_popular article a figure {
+    display: flex;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 20px;
+    padding-left: 4px;
 }
 #most_popular article a figure img {
     object-fit: cover;
@@ -224,7 +237,8 @@ input::placeholder {
     height: 135px;
 }
 #most_popular article a div {
-    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #most_popular article a div h3 {
     font-weight: 700;
@@ -232,17 +246,75 @@ input::placeholder {
 }
 #most_popular article a div p {
     color: black;
+    margin-top: 10px;
 }
 #most_popular article a div ul {
-    margin-top: 40px;
+    margin-top: 65px;
     display: flex;
     list-style-type: none;
-    font-size: 10px;
+    font-size: 0.6em;
 }
 #most_popular article a div ul i {
     color: #0065FC;
 }
+
 /*end of most popular*/
+/*accomodations*/
+
+#accomodations {
+    background-color: white;
+}
+#accomodations h2 {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+#accomodations article {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    margin: 0 40px 30px 0;
+    transform: scale(1);
+    transition: .3s;
+}
+#accomodations article:hover {
+    transform: scale(1.08);
+}
+#accomodations article a {
+    text-decoration: none;
+}
+#accomodations article figure {
+
+}
+#accomodations article figure img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;    
+    height: 115px;
+    width: 100%;
+    object-fit: cover;
+}
+#accomodations article a div {
+    margin: 5px;
+}
+#accomodations article a div h3 {
+    color: #101010;
+    font-weight: 700;
+}
+#accomodations article a div p {
+    color: #101010;
+}
+#accomodations article a div ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 0.6em;
+    margin-top: 10px;
+}
+#accomodations article a div ul li i{
+    color: #0065FC;
+}
+/*end of accomodations*/
+
 
 /*footer*/
 
