@@ -82,13 +82,7 @@ header nav ul li a {
     flex-basis: 100%;
     border-radius: 25px;
     height: 50px;
-    border: 2px solid #f2f2f2;
 }
-@-moz-document url-prefix() { /*Cibler l'apparence sur firefox*/
-#searchbar label {
-   border-top: 2px solid #f2f2f2;
-}
-    }
 #searchbar label {
     background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
@@ -101,7 +95,9 @@ header nav ul li a {
     font-weight: 700;
     flex: 1;
     padding: 0 15px;
-    border: none; 
+    border: none;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
 }
 #searchbar form input:focus {/*supprimer les bordures noires dans le champ input de saisie active*/
     outline: none;
@@ -119,8 +115,10 @@ input::placeholder {
     border:none;
     border-radius: 15px;
     color: white;
-    height: 50px;
     width: 50px;
+    margin-left: -15px;
+}
+#searchbar button i {
     line-height: 50px;
 }
 #searchbar button span {
