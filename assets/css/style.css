@@ -71,7 +71,7 @@ header nav ul li a {
 #searchbar h1 {
     font-weight: 700;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 #searchbar p {
     margin-bottom:20px;
@@ -124,7 +124,7 @@ input::placeholder {
     line-height: 50px;
 }
 #searchbar button span {
-    display: none; /*dans les autres media queries il faudra faire display: initial*/
+    display: none; /*dans les autres media queries il faudra faire display:initial*/
 }
 
 /*end of search bar*/
@@ -138,6 +138,7 @@ input::placeholder {
     margin-bottom: 15px;
     font-weight: 700;
     display: flex;
+    font-size: 1.3em;
 }
 #filters ul { /*le texte des filtres*/
     display: flex;
@@ -211,11 +212,6 @@ input::placeholder {
 #most_popular article {
     background-color: white;
     border-radius: 15px;
-    transform: scale(1);
-    transition: 0.3s;
-}
-#most_popular article:hover{
-    transform: scale(1.10)
 }
 #most_popular article a {
     text-decoration: none;
@@ -236,20 +232,17 @@ input::placeholder {
     width: 127px;
     height: 135px;
 }
-#most_popular article a div {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
 #most_popular article a div h3 {
     font-weight: 700;
     color: black;
+    margin-top: 10px;
 }
 #most_popular article a div p {
     color: black;
     margin-top: 10px;
 }
 #most_popular article a div ul {
-    margin-top: 65px;
+    margin-top: 35px;
     display: flex;
     list-style-type: none;
     font-size: 0.6em;
@@ -263,6 +256,7 @@ input::placeholder {
 
 #accomodations {
     background-color: white;
+    width: 113%;
 }
 #accomodations h2 {
     font-weight: 700;
@@ -270,22 +264,17 @@ input::placeholder {
     margin-bottom: 20px;
 }
 #accomodations article {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
     border-radius: 15px;
     background-color: white;
     padding: 5px;
-    margin: 0 40px 30px 0;
-    transform: scale(1);
-    transition: .3s;
-}
-#accomodations article:hover {
-    transform: scale(1.08);
+    margin: 0 25px 25px 0;
 }
 #accomodations article a {
     text-decoration: none;
 }
 #accomodations article figure {
-
+    display: flex;
 }
 #accomodations article figure img {
     border-top-right-radius: 15px;
@@ -295,7 +284,7 @@ input::placeholder {
     object-fit: cover;
 }
 #accomodations article a div {
-    margin: 5px;
+    margin: 10px;
 }
 #accomodations article a div h3 {
     color: #101010;
@@ -303,19 +292,65 @@ input::placeholder {
 }
 #accomodations article a div p {
     color: #101010;
+    font-weight: 100;
+    font-size: 0.9em;
+    margin-top: 5px;
 }
 #accomodations article a div ul {
     display: flex;
     list-style-type: none;
-    font-size: 0.6em;
+    font-size: 0.7em;
     margin-top: 10px;
 }
 #accomodations article a div ul li i{
     color: #0065FC;
 }
+#accomodations a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    color: black;
+}
+
 /*end of accomodations*/
+/*activities*/
 
+#activities {
+    background-color: white;
+    width: 113%;
+}
+#activities h2 {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+#activities div article {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    background-color: white;
+    margin: 0 25px 25px 0;
+}
+#activities div article a {
+    text-decoration: none;
+}
+#activities div article a figure div img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;    
+    height: 115px;
+    width: 100%;
+    object-fit: cover;
+}
+#activities div article a figure figcaption {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    height: 40px;
+    color: black;
+    font-weight: 700;
+    font-size: 0.9em;
+}
 
+/*en of activities*/
 /*footer*/
 
 footer {
@@ -341,4 +376,4 @@ footer div ul li a {
     font-size: 1rem;
 }
 
-/*footer*/
+/*end of footer*/
