@@ -66,7 +66,7 @@ header nav ul li a {
 #searchbar {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #searchbar h1 {
     font-weight: 700;
@@ -103,9 +103,6 @@ header nav ul li a {
 #searchbar form input:focus {/*supprimer les bordures noires dans le champ input de saisie active*/
     outline: none;
 }
-input::placeholder {
-    color:black;
-}
 #searchbar form input::placeholder {
     color: black !important;
     font-weight: 700;
@@ -130,13 +127,13 @@ input::placeholder {
 /*filters*/
 
 #filters {
-    flex-wrap: wrap;
     display: inline-flex;
+    flex-wrap: wrap;
 }
 #filters h2 {
+    display: flex;
     margin-bottom: 15px;
     font-weight: 700;
-    display: flex;
     font-size: 1.3em;
 }
 #filters ul { /*le texte des filtres*/
@@ -157,11 +154,11 @@ input::placeholder {
     padding-right: 15px;
     height: 2.5rem;
 }
-#filters ul li:hover{
+#filters ul li:hover{ /*changement au survol*/
     background-color: #DEEBFF;
     cursor: pointer;
 }
-#filters ul li i { /*l'icône*/
+#filters ul li i { /*les icônes des filtres*/
     color: #0065fc;
     background-color:#DEEBFF;
     border-radius: 30px;
@@ -185,7 +182,7 @@ input::placeholder {
 #filters p {
     display: flex;
     align-items: baseline;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight:100;
     line-height: 1.7em;    
 }
@@ -199,10 +196,10 @@ input::placeholder {
     padding-top: 40px;
 }
 #most_popular h2 {
-    font-weight: 700;
-    font-size: 1.3em;
     display: flex;
     justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.3em;
     margin-bottom: 30px;
 }
 #most_popular h2 i {
@@ -223,7 +220,7 @@ input::placeholder {
 }
 #most_popular article a figure {
     height: 100%;
-    flex-basis: 55%;
+    flex-basis: 40%;
 }
 #most_popular article a figure img {
     object-fit: cover;
@@ -234,19 +231,19 @@ input::placeholder {
     max-width: 100%;
 }
 #most_popular article a div {
-    flex-basis: 45%;
     display: flex;
     flex-direction: column;
+    flex-basis: 60%;
     padding: 10px;
-
 }
 #most_popular article a div h3 {
-    font-weight: 700;
+    font-weight: 900;
     color: black;
 }
 #most_popular article a div p {
     color: black;
     margin-top: 10px;
+    font-size: 0.9em;
 }
 #most_popular article a div ul {
     margin-top: auto;
@@ -257,6 +254,7 @@ input::placeholder {
 }
 #most_popular article a div ul i {
     color: #0065FC;
+    margin-right: 2px;
 }
 
 /*end of most popular*/
@@ -278,11 +276,12 @@ input::placeholder {
     margin-bottom: 15px;
 }
 #accomodations article a {
-    text-decoration: none;
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 5px;
+    color: black;
+    text-decoration: none;
 }
 #accomodations article figure {
     height: 60%;
@@ -300,11 +299,9 @@ input::placeholder {
     height: 40%;
 }
 #accomodations article a div h3 {
-    color: #101010;
     font-weight: 700;
 }
 #accomodations article a div p {
-    color: #101010;
     font-weight: 100;
     font-size: 0.9em;
     margin-top: 5px;
@@ -321,8 +318,6 @@ input::placeholder {
 #accomodations a {
     text-decoration: none;
     font-weight: 700;
-    font-size: 1em;
-    color: black;
 }
 
 /*end of accomodations*/
@@ -340,7 +335,8 @@ input::placeholder {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
     border-radius: 15px;
     background-color: white;
-    height: 150px;
+    height: 170px;
+    margin-bottom: 15px;
 }
 #activities div article a {
     text-decoration: none;    
@@ -375,14 +371,15 @@ input::placeholder {
 /*footer*/
 
 footer {
-    display: flex;
-    flex-direction: column;
     background-color: #f2f2f2;
     font-family: "Raleway";
 }
 footer div {
     margin-left: 15px;
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
 footer div h3 {
     font-weight: 700;
