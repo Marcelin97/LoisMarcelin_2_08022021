@@ -1,54 +1,62 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/
+  box-sizing: border-box; /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/
   font-family: "Raleway", sans-serif; /*Police*/
 }
 section {
   padding: 20px;
 }
 
+/*common to several elements*/
+a {
+  text-decoration: none;
+}
+article {
+  max-width: 480px;
+}
+img {
+  object-fit: cover;
+}
+#searchbar h1,
+#filters h2,
+#most_popular h2,
+#accomodations h2,
+#activities h2,
+footer div div h3 {
+  font-size: 1.3em;
+}
+#most_popular article a div p,
+#accomodations article a div p,
+#activities div article a figure figcaption,
+footer div div ul li a {
+  font-size: 0.9em;
+}
+
+/*common to several elements*/
 /*page header*/
 
 header {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 5%;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
-#logo {
+header img {
   margin-left: 15px;
 }
 header > a {
-  text-decoration: none;
   margin-right: 15px;
 }
 header nav {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   margin-top: 10px;
 }
 header nav ul {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   text-align: center;
 }
 header nav ul li {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  justify-content: center;
+  flex-basis: 50%;
   border-bottom: 3px solid #f2f2f2;
   font-weight: normal;
 }
@@ -61,26 +69,20 @@ header nav li:hover > a {
 header nav ul li a {
   padding: 15px;
   width: 100%;
-  text-decoration: none;
 }
 
 /*end of page header*/
 /*search bar*/
 
-#searchbar {
-  margin-bottom: 10px;
-}
 #searchbar h1 {
   margin-bottom: 10px;
-  font-size: 1.3em;
 }
 #searchbar p {
   margin-bottom: 20px;
 }
 #searchbar form {
   max-width: 350px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   height: 50px;
 }
 #searchbar form label {
@@ -93,36 +95,15 @@ header nav ul li a {
 }
 #searchbar form input {
   color: #101010;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 0 15px;
   border: none;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
 }
 #searchbar form input:focus {
-  outline: none; /*supprimer les bordures noires dans le champ input de saisie active*/
-}
-#searchbar form input::-webkit-input-placeholder {
-  color: black !important;
-  font-weight: 700;
-  opacity: 1; /*pour que le noir dans firefox reste bien noir*/
-}
-#searchbar form input::-moz-placeholder {
-  color: black !important;
-  font-weight: 700;
-  opacity: 1; /*pour que le noir dans firefox reste bien noir*/
-}
-#searchbar form input:-ms-input-placeholder {
-  color: black !important;
-  font-weight: 700;
-  opacity: 1; /*pour que le noir dans firefox reste bien noir*/
-}
-#searchbar form input::-ms-input-placeholder {
-  color: black !important;
-  font-weight: 700;
-  opacity: 1; /*pour que le noir dans firefox reste bien noir*/
+  /*supprimer les bordures noires dans le champ input de saisie active*/
+  outline: none;
 }
 #searchbar form input::placeholder {
   color: black !important;
@@ -149,35 +130,31 @@ header nav ul li a {
 /*filters*/
 
 #filters {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
+  row-gap: 20px;
 }
 #filters h2 {
-  margin-bottom: 15px;
-  font-size: 1.3em;
+  flex-basis: 100%;
 }
-#filters ul {/*le texte des filtres*/
-  margin-bottom: 25px;
-}
-#filters ul li {/* le texte et l'icone*/
+#filters ul li {
+  /* le texte et l'icone*/
   border-bottom: 1.5px solid #d9d9d9;
   border-top: 1.5px solid #d9d9d9;
   border-right: 1.5px solid #d9d9d9;
   border-radius: 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 15px;
+  align-items: center;
   margin-right: 15px;
   padding-right: 15px;
   height: 2.5em;
+  margin-bottom: 10px;
 }
-#filters ul li:hover {/*changement au survol*/
+#filters ul li:hover {
+  /*changement au survol*/
   background-color: #deebff;
   cursor: pointer; /*changement d'état de la souris*/
 }
-#filters ul li i {/*les icônes des filtres*/
+#filters ul li i {
+  /*les icônes des filtres*/
   background-color: #deebff;
   border-radius: 30px;
   width: 40px;
@@ -187,13 +164,12 @@ header nav ul li a {
   margin-right: 10px;
 }
 #filters p {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
   margin-bottom: 20px;
   line-height: 1.7em;
 }
-#filters p .fas {/*le i de info*/
+#filters p .fas {
+  /*le i de info*/
   width: 1.7em;
   height: 1.7em;
   border-radius: 15px;
@@ -209,14 +185,9 @@ header nav ul li a {
 
 #most_popular {
   background-color: #f2f2f2;
-  padding-bottom: 40px;
-  padding-top: 40px;
 }
 #most_popular h2 {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 1.3em;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 #most_popular article {
@@ -226,18 +197,14 @@ header nav ul li a {
   margin-bottom: 15px;
 }
 #most_popular article a {
-  text-decoration: none;
   padding: 5px;
   height: 100%;
 }
 #most_popular article a figure {
   height: 100%;
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  flex-basis: 40%;
 }
 #most_popular article a figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   width: 100%;
@@ -245,17 +212,15 @@ header nav ul li a {
   max-width: 100%;
 }
 #most_popular article a div {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  flex-basis: 60%;
   padding: 10px;
 }
 #most_popular article a div p {
   margin-top: 10px;
-  font-size: 0.9em;
 }
 #most_popular article a div ul {
   margin-top: auto;
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 #most_popular article a div ul li i {
   margin-right: 2px;
@@ -268,12 +233,10 @@ header nav ul li a {
   background-color: white;
 }
 #accomodations h2 {
-  font-size: 1.3em;
   margin-bottom: 20px;
 }
 #accomodations article {
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   background-color: white;
   height: 200px;
@@ -282,7 +245,6 @@ header nav ul li a {
 #accomodations article a {
   height: 100%;
   padding: 5px;
-  text-decoration: none;
 }
 #accomodations article a figure {
   height: 60%;
@@ -293,8 +255,6 @@ header nav ul li a {
   height: 100%;
   width: 100%;
   max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 #accomodations article a div {
   margin: 10px;
@@ -302,18 +262,14 @@ header nav ul li a {
 }
 #accomodations article a div p {
   font-weight: 100;
-  font-size: 0.9em;
   margin-top: 5px;
 }
 #accomodations article a div ul {
-  font-size: 0.6em;
+  font-size: 0.7em;
   margin-top: 10px;
 }
 #accomodations article a div ul li i {
   margin-right: 2px;
-}
-#accomodations a {
-  text-decoration: none;
 }
 
 /*end of accomodations*/
@@ -323,27 +279,20 @@ header nav ul li a {
   background-color: white;
 }
 #activities h2 {
-  font-size: 1.3em;
   margin-bottom: 20px;
 }
 #activities div article {
-  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   background-color: white;
   height: 170px;
   margin-bottom: 15px;
 }
-#activities div article a {
-  text-decoration: none;
-}
 #activities div article a figure {
   height: 100%;
 }
 #activities div article a figure div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   height: 60%;
 }
 #activities div article a figure div img {
@@ -351,16 +300,10 @@ header nav ul li a {
   border-top-left-radius: 15px;
   height: 115px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 #activities div article a figure figcaption {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 0.9em;
-  -ms-flex-preferred-size: 55px;
-      flex-basis: 55px;
+  align-items: center;
+  flex-basis: 55px;
   padding: 15px;
 }
 
@@ -371,17 +314,14 @@ footer {
   background-color: #f2f2f2;
 }
 footer div {
-  margin-left: 15px;
-  margin-top: 25px;
+  margin: 25px 15px
 }
 footer div div h3 {
-  font-size: 1.2em;
   margin-bottom: 15px;
 }
 footer div div ul li a {
-  text-decoration: none;
   display: inline-block;
-  margin: 8px 0;
-  font-size: 0.9em;
+  margin: 8px auto;
 }
+
 /*end of footer*/
