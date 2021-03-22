@@ -1,0 +1,15 @@
+.bold {
+    font-weight: 700;
+}
+.dflex {
+    display: flex;
+}
+.flex-dir-row {
+    flex-direction: row;
+}
+.flex-dir-col {
+    flex-direction: column;
+}
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
