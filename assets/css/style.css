@@ -172,6 +172,7 @@ header nav ul li a {
   align-items: baseline;
   margin-bottom:20px;
   line-height: 1.7em;
+  flex-basis: 100%;
 }
 #filters p i {
   /*le i de info*/
