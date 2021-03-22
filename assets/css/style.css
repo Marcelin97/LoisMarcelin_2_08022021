@@ -138,6 +138,9 @@ header nav ul li a {
 #filters h2 {
   flex-basis: 100%;
 }
+#filters ul {
+  flex-basis: 100%;
+}
 #filters ul li {
   /* le texte et l'icone*/
   border-bottom: 1.5px solid #d9d9d9;
@@ -169,10 +172,11 @@ header nav ul li a {
   margin-right: 10px;
 }
 #filters p {
-  align-items: baseline;
   margin-bottom:20px;
   line-height: 1.7em;
-  flex-basis: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
 }
 #filters p i {
   /*le i de info*/
