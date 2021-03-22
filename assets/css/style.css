@@ -3,7 +3,7 @@
   font-family: "Raleway", sans-serif; /*Police*/
 }
 section {
-  padding: 20px;
+  padding: 15px;
 }
 
 /*common to several elements*/
@@ -107,6 +107,7 @@ header nav ul li a {
 }
 #searchbar form input::placeholder {
   color: black !important;
+  font-size: 1.3em;
   font-weight: 700;
   opacity: 1; /*pour que le noir dans firefox reste bien noir*/
 }
@@ -116,6 +117,7 @@ header nav ul li a {
   border-radius: 15px;
   color: white;
   width: 50px;
+  min-width: 50px;
   margin-left: -15px; /*pour que les bordures grises de l'input viennent jusqu'au bouton rechercher*/
   cursor: pointer; /*changement d'état de la souris*/
 }
@@ -150,6 +152,9 @@ header nav ul li a {
 }
 #filters ul li:hover {
   /*changement au survol*/
+  border-bottom: 1.5px solid #deebff;
+  border-top: 1.5px solid #deebff;
+  border-right: 1.5px solid #deebff;
   background-color: #deebff;
   cursor: pointer; /*changement d'état de la souris*/
 }
@@ -165,10 +170,10 @@ header nav ul li a {
 }
 #filters p {
   align-items: baseline;
-  margin-bottom: 20px;
+  margin-bottom:20px;
   line-height: 1.7em;
 }
-#filters p .fas {
+#filters p i {
   /*le i de info*/
   width: 1.7em;
   height: 1.7em;
@@ -185,6 +190,8 @@ header nav ul li a {
 
 #most_popular {
   background-color: #f2f2f2;
+  flex-direction: column;
+  row-gap: 10px;
 }
 #most_popular h2 {
   justify-content: space-between;
@@ -194,7 +201,6 @@ header nav ul li a {
   background-color: white;
   border-radius: 15px;
   height: 150px;
-  margin-bottom: 15px;
 }
 #most_popular article a {
   padding: 5px;
@@ -271,6 +277,9 @@ header nav ul li a {
 #accomodations article a div ul li i {
   margin-right: 2px;
 }
+#accomodations > a {
+  line-height: 40px;
+}
 
 /*end of accomodations*/
 /*activities*/
@@ -314,7 +323,7 @@ footer {
   background-color: #f2f2f2;
 }
 footer div {
-  margin: 25px 15px
+  margin: 25px 15px 0px 15px;
 }
 footer div div h3 {
   margin-bottom: 15px;
