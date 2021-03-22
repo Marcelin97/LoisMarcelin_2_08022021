@@ -1,12 +1,6 @@
 .bold {
     font-weight: 700;
 }
-.colorblue {
-    color: #0065fc;
-}
-.colorblack {
-    color: black;
-}
 .dflex {
     display: flex;
 }

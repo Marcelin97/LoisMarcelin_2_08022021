@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box; /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/
   font-family: "Raleway", sans-serif; /*Police*/
+  color: #101010;
+  font-size: 1em;
 }
 section {
   padding: 15px;
@@ -24,11 +26,18 @@ img {
 footer div div h3 {
   font-size: 1.3em;
 }
-#most_popular article a div p,
-#accomodations article a div p,
-#activities div article a figure figcaption,
-footer div div ul li a {
-  font-size: 0.9em;
+li i {
+  margin-right: 2px;
+  font-size: 0.7em;
+  color: #0065fc;
+}
+.none {
+  color:#d9d9d9;
+}
+#accomodations article a figure img,
+#most_popular article a figure img {
+  height: 100%;
+  width: 100%;
 }
 
 /*common to several elements*/
@@ -45,6 +54,7 @@ header img {
 }
 header > a {
   margin-right: 15px;
+  color: #0065fc;
 }
 header nav {
   flex-basis: 100%;
@@ -115,7 +125,6 @@ header nav ul li a {
   background-color: #0065fc;
   border: none;
   border-radius: 15px;
-  color: white;
   width: 50px;
   min-width: 50px;
   margin-left: -15px; /*pour que les bordures grises de l'input viennent jusqu'au bouton rechercher*/
@@ -123,6 +132,7 @@ header nav ul li a {
 }
 #searchbar form button i {
   line-height: 50px;
+  color: white;
 }
 #searchbar form button span {
   display: none; /*dans les autres media queries il faudra faire display:initial*/
@@ -163,6 +173,7 @@ header nav ul li a {
 }
 #filters ul li i {
   /*les icônes des filtres*/
+  color: #0065fc;
   background-color: #deebff;
   border-radius: 30px;
   width: 40px;
@@ -180,6 +191,7 @@ header nav ul li a {
 }
 #filters p i {
   /*le i de info*/
+  color: #0065fc;
   width: 1.7em;
   height: 1.7em;
   border-radius: 15px;
@@ -218,8 +230,6 @@ header nav ul li a {
 #most_popular article a figure img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 100%;
-  height: 100%;
   max-width: 100%;
 }
 #most_popular article a div {
@@ -231,10 +241,6 @@ header nav ul li a {
 }
 #most_popular article a div ul {
   margin-top: auto;
-  font-size: 0.7em;
-}
-#most_popular article a div ul li i {
-  margin-right: 2px;
 }
 
 /*end of most popular*/
@@ -263,8 +269,6 @@ header nav ul li a {
 #accomodations article a figure img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  height: 100%;
-  width: 100%;
   max-height: 100%;
 }
 #accomodations article a div {
@@ -276,7 +280,6 @@ header nav ul li a {
   margin-top: 5px;
 }
 #accomodations article a div ul {
-  font-size: 0.7em;
   margin-top: 10px;
 }
 #accomodations article a div ul li i {
@@ -324,11 +327,9 @@ header nav ul li a {
 /*en of activities*/
 /*footer*/
 
-footer {
-  background-color: #f2f2f2;
-}
 footer div {
-  margin: 25px 15px 0px 15px;
+  padding: 25px 15px 0px 15px;
+  background-color: #f2f2f2;
 }
 footer div div h3 {
   margin-bottom: 15px;
