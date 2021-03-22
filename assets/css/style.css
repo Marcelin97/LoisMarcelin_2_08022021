@@ -340,3 +340,27 @@ footer div div ul li a {
 }
 
 /*end of footer*/
+
+@media only screen and (min-width: 576px) {
+  header {
+    margin-top: 1em;
+  }
+  header > a:nth-child(2) {
+    order: 1;
+    text-align: right;
+    flex-basis: 10%;
+  }
+  header nav {
+    margin-top: 0;
+    max-width: 350px;
+    flex-basis: 40%;
+  }
+  header nav ul li {
+    border-bottom: 0;
+  }
+  header nav ul li:hover {
+    border-bottom: none;
+    border-top: 3px solid #0065fc;
+  }
+
+}
