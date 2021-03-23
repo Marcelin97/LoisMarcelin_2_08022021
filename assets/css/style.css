@@ -12,9 +12,7 @@ section {
 a {
   text-decoration: none;
 }
-article {
-  max-width: 480px;
-}
+
 img {
   object-fit: cover;
 }
@@ -391,6 +389,53 @@ footer div div ul li a {
   }
 
   /*end of search bar*/
+  /*filters*/
 
+  #filters {
+  }
+  #filters h2 {
+  }
+  #filters ul {
+  }
 
+  /*filters*/
+  /*most popular*/
+  #most_popular {
+ 
+  }
+  #most_popular article a figure {
+    flex-basis: 60%;
+  }
+  #most_popular article a .description {
+    flex-basis: 40%;
+  }
+
+  /*end of most popular*/
+  /*accomodations*/
+
+  #accomodations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #accomodations h2 {
+    flex-basis: 100%;
+  }
+  #accomodations article {
+    flex-basis: 48%;
+  }
+
+  /*end of accomodations*/
+  /*activities*/
+
+  #activities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #activities h2 {
+    display: flex;
+    flex-basis: 100%;
+  }
 }
