@@ -91,7 +91,7 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 #searchbar form {
-  max-width: 350px;
+  max-width: 35em;
   flex-basis: 100%;
   height: 50px;
 }
@@ -342,8 +342,11 @@ footer div div ul li a {
 /*end of footer*/
 
 @media only screen and (min-width: 576px) {
-  header {
-    margin-top: 1em;
+
+  /*header*/
+  header a {
+    margin-top: 2em;
+    justify-content: flex-end;
   }
   header > a:nth-child(2) {
     order: 1;
@@ -351,16 +354,43 @@ footer div div ul li a {
     flex-basis: 10%;
   }
   header nav {
-    margin-top: 0;
+    margin: 0 0 0 auto;
     max-width: 350px;
     flex-basis: 40%;
   }
   header nav ul li {
-    border-bottom: 0;
+    border-bottom: none;
+    justify-content: right;
   }
   header nav ul li:hover {
     border-bottom: none;
     border-top: 3px solid #0065fc;
   }
+
+  /*en of header*/
+  /*search bar*/
+
+  #searchbar form {
+    max-width: 35em;
+  }
+  #searchbar form button {
+    border-radius: 0 1em 1em 0;
+    display:flex;
+    flex-direction: row;
+    line-height: 3em;
+    width: 7em;
+    min-width: 7em;
+  }
+  #searchbar form button > i {
+    display: none;
+  }
+  #searchbar form button span {
+    display: initial;
+    font-weight: bold;
+    color: white;
+  }
+
+  /*end of search bar*/
+
 
 }
