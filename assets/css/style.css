@@ -392,17 +392,21 @@ footer div div ul li a {
   /*filters*/
 
   #filters {
+    display: flex;
+    flex-direction: row;
+    line-height: 2em;
   }
   #filters h2 {
+    flex-basis: 10%;
+    margin-right: 1em;
   }
   #filters ul {
+    flex-basis: 80%;
   }
 
   /*filters*/
   /*most popular*/
-  #most_popular {
- 
-  }
+
   #most_popular article a figure {
     flex-basis: 60%;
   }
@@ -429,13 +433,29 @@ footer div div ul li a {
   /*end of accomodations*/
   /*activities*/
 
-  #activities {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  #activities div article {
+    margin: 10px;   
   }
   #activities h2 {
-    display: flex;
     flex-basis: 100%;
   }
+  #activities div {
+    display: flex;    
+  }
+  #activities div >article:nth-child(1) {
+    flex-basis: 100%;
+  }
+  
+  /*end of activities*/
+  /*footer*/
+
+  footer div div {
+    display: inline-flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  footer div div {
+  }
+  
 }
+  /*end of footer*/
