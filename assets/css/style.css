@@ -512,9 +512,10 @@ footer div div ul li a {
     }
     #activities div {
       flex-direction: column;
-      flex-basis: 24%; 
+      flex-basis: 20%;
+      max-height: 500px; 
     }
 
     /*end of activities*/
-    
+
   }
