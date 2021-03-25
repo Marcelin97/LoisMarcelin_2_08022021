@@ -89,7 +89,7 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 #searchbar form {
-  max-width: 35em;
+  max-width: 350px;
   flex-basis: 100%;
   height: 50px;
 }
@@ -108,6 +108,7 @@ header nav ul li a {
   border: none;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
+  width: 40%;
 }
 #searchbar form input:focus {
   /*supprimer les bordures noires dans le champ input de saisie active*/
@@ -115,7 +116,7 @@ header nav ul li a {
 }
 #searchbar form input::placeholder {
   color: black !important;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 700;
   opacity: 1; /*pour que le noir dans firefox reste bien noir*/
 }
@@ -341,43 +342,20 @@ footer div div ul li a {
 
 @media only screen and (min-width: 576px) {
 
-  /*header*/
-  header a {
-    margin-top: 2em;
-    justify-content: flex-end;
-  }
-  header > a:nth-child(2) {
-    order: 1;
-    text-align: right;
-    flex-basis: 10%;
-  }
-  header nav {
-    margin: 0 0 0 auto;
-    max-width: 350px;
-    flex-basis: 40%;
-  }
-  header nav ul li {
-    border-bottom: none;
-    justify-content: right;
-  }
-  header nav ul li:hover {
-    border-bottom: none;
-    border-top: 3px solid #0065fc;
-  }
-
-  /*en of header*/
   /*search bar*/
 
   #searchbar form {
-    max-width: 35em;
+    max-width: 400px;
   }
   #searchbar form button {
     border-radius: 0 1em 1em 0;
     display:flex;
     flex-direction: row;
     line-height: 3em;
-    width: 7em;
-    min-width: 7em;
+    width: initial;
+    margin-left: 0;
+    padding: 0 10px;
+
   }
   #searchbar form button > i {
     display: none;
@@ -442,25 +420,23 @@ footer div div ul li a {
   #activities div {
     display: flex;    
   }
-  #activities div >article:nth-child(1) {
+  #activities div:nth-of-type(1) article,
+  #activities div:nth-of-type(3) article 
+   {
     flex-basis: 100%;
   }
-  #activities div >article:nth-child(2) {
-    flex-basis: 100%;
+  #activities div:nth-of-type(2) article:first-child {
+    flex-basis: 55%;
+  }
+  #activities div:nth-of-type(2) article:last-child {
+    flex-basis: 45%;
+  }
+  #activities div:nth-of-type(4) article:first-child {
+    flex-basis: 45%;
+  }
+  #activities div:nth-of-type(4) article:last-child {
+    flex-basis: 55%;
   }
 
   
   /*end of activities*/
-  /*footer*/
-
-  footer div {
-    display: flex;
-    flex-direction: row;
-  }
-  footer div div {
-  }
-  footer div div ul li a {
-    flex-direction: row;  
-  }
-}
-  /*end of footer*/
