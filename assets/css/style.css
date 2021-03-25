@@ -314,7 +314,7 @@ header nav ul li a {
 #activities div article a figure div img {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  height: 115px;
+  height: 100%;
   width: 100%;
 }
 #activities div article a figure figcaption {
@@ -413,6 +413,7 @@ footer div div ul li a {
 
   #activities div article {
     margin: 10px;   
+    height: 200px;
   }
   #activities h2 {
     flex-basis: 100%;
@@ -437,6 +438,30 @@ footer div div ul li a {
   #activities div:nth-of-type(4) article:last-child {
     flex-basis: 55%;
   }
-
+}
   
   /*end of activities*/
+
+  @media only screen and (min-width: 768px) {
+
+    #most_popular article {
+      width: 80%;
+      align-self: center;
+    }
+    #accomodations {
+      justify-content: space-around;
+    }
+    #accomodations article {
+      flex-basis: 45%;
+    }
+    #activities article {
+      height: 220px;
+    }
+    footer >div {
+      flex-direction: row !important;
+    }
+    footer div div {
+      flex-basis: 30%;
+    }
+
+  }
