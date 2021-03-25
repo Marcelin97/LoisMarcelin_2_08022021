@@ -513,16 +513,19 @@ footer div div ul li a {
     #activities div {
       flex-direction: column;
       flex-basis: 20%;
+      justify-content: space-around;
     }
     #activities div:nth-of-type(3) article,
     #activities div:nth-of-type(1) article {
-      max-height: 300px;
+    height: 300px;
+    flex-basis: initial;
     }
     #activities div:nth-of-type(2) article:first-child,
     #activities div:nth-of-type(2) article:last-child,
     #activities div:nth-of-type(4) article:first-child,
     #activities div:nth-of-type(4) article:last-child {
-      max-height: 140px;
+    height: 140px;
+    flex-basis: initial;
     }
 
     /*end of activities*/
