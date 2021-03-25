@@ -445,17 +445,22 @@ footer div div ul li a {
   #activities div >article:nth-child(1) {
     flex-basis: 100%;
   }
+  #activities div >article:nth-child(2) {
+    flex-basis: 100%;
+  }
+
   
   /*end of activities*/
   /*footer*/
 
-  footer div div {
-    display: inline-flex;
-    flex-direction:row;
-    flex-wrap: wrap;
+  footer div {
+    display: flex;
+    flex-direction: row;
   }
   footer div div {
   }
-  
+  footer div div ul li a {
+    flex-direction: row;  
+  }
 }
   /*end of footer*/
