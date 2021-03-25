@@ -5,7 +5,7 @@
   font-size: 1em;
 }
 section {
-  padding: 15px;
+  padding: 25px 15px;
 }
 
 /*common to several elements*/
@@ -326,9 +326,11 @@ header nav ul li a {
 /*en of activities*/
 /*footer*/
 
-footer div {
-  padding: 25px 15px 0px 15px;
+footer {
   background-color: #f2f2f2;
+}
+footer div div {
+  padding: 25px 15px 0px 15px;
 }
 footer div div h3 {
   margin-bottom: 15px;
@@ -355,7 +357,6 @@ footer div div ul li a {
     width: initial;
     margin-left: 0;
     padding: 0 10px;
-
   }
   #searchbar form button > i {
     display: none;
@@ -422,8 +423,7 @@ footer div div ul li a {
     display: flex;    
   }
   #activities div:nth-of-type(1) article,
-  #activities div:nth-of-type(3) article 
-   {
+  #activities div:nth-of-type(3) article {
     flex-basis: 100%;
   }
   #activities div:nth-of-type(2) article:first-child {
@@ -448,20 +448,25 @@ footer div div ul li a {
       width: 80%;
       align-self: center;
     }
+
     #accomodations {
       justify-content: space-around;
     }
     #accomodations article {
       flex-basis: 45%;
     }
+    #accomodations a {
+      flex-basis: 100%;
+    }
+
     #activities article {
       height: 220px;
     }
+
     footer >div {
       flex-direction: row !important;
     }
     footer div div {
       flex-basis: 30%;
     }
-
   }
