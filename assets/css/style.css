@@ -12,9 +12,7 @@ section {
 a {
   text-decoration: none;
 }
-article {
-  max-width: 480px;
-}
+
 img {
   object-fit: cover;
 }
@@ -110,6 +108,7 @@ header nav ul li a {
   border: none;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
+  width: 40%;
 }
 #searchbar form input:focus {
   /*supprimer les bordures noires dans le champ input de saisie active*/
@@ -117,7 +116,7 @@ header nav ul li a {
 }
 #searchbar form input::placeholder {
   color: black !important;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 700;
   opacity: 1; /*pour que le noir dans firefox reste bien noir*/
 }
@@ -340,3 +339,104 @@ footer div div ul li a {
 }
 
 /*end of footer*/
+
+@media only screen and (min-width: 576px) {
+
+  /*search bar*/
+
+  #searchbar form {
+    max-width: 400px;
+  }
+  #searchbar form button {
+    border-radius: 0 1em 1em 0;
+    display:flex;
+    flex-direction: row;
+    line-height: 3em;
+    width: initial;
+    margin-left: 0;
+    padding: 0 10px;
+
+  }
+  #searchbar form button > i {
+    display: none;
+  }
+  #searchbar form button span {
+    display: initial;
+    font-weight: bold;
+    color: white;
+  }
+
+  /*end of search bar*/
+  /*filters*/
+
+  #filters {
+    display: flex;
+    flex-direction: row;
+    line-height: 2em;
+  }
+  #filters h2 {
+    flex-basis: 10%;
+    margin-right: 1em;
+  }
+  #filters ul {
+    flex-basis: 80%;
+  }
+
+  /*filters*/
+  /*most popular*/
+
+  #most_popular article a figure {
+    flex-basis: 60%;
+  }
+  #most_popular article a .description {
+    flex-basis: 40%;
+  }
+
+  /*end of most popular*/
+  /*accomodations*/
+
+  #accomodations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #accomodations h2 {
+    flex-basis: 100%;
+  }
+  #accomodations article {
+    flex-basis: 48%;
+  }
+
+  /*end of accomodations*/
+  /*activities*/
+
+  #activities div article {
+    margin: 10px;   
+  }
+  #activities h2 {
+    flex-basis: 100%;
+  }
+  #activities div {
+    display: flex;    
+  }
+  #activities div:nth-of-type(1) article,
+  #activities div:nth-of-type(3) article 
+   {
+    flex-basis: 100%;
+  }
+  #activities div:nth-of-type(2) article:first-child {
+    flex-basis: 55%;
+  }
+  #activities div:nth-of-type(2) article:last-child {
+    flex-basis: 45%;
+  }
+  #activities div:nth-of-type(4) article:first-child {
+    flex-basis: 45%;
+  }
+  #activities div:nth-of-type(4) article:last-child {
+    flex-basis: 55%;
+  }
+
+  
+  /*end of activities*/
