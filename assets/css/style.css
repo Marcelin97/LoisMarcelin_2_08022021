@@ -422,8 +422,8 @@ footer div div ul li a {
   #activities div article {
     height: 200px;
   }
-  #activities div:nth-of-type(1) article,
-  #activities div:nth-of-type(3) article {
+  #activities div:nth-of-type(1) article,/*vieux port*/
+  #activities div:nth-of-type(3) article /*parc national*/ {
     flex-basis: 100%;
   }
   #activities div:nth-of-type(2) article:first-child {
@@ -504,30 +504,10 @@ footer div div ul li a {
     /*end of accomodations*/
     /*activities*/
 
-    #activities {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
+    #activities div article {
+      height: 300px;
     }
-    #activities div {
-      flex-direction: column;
-      flex-basis: 20%;
-      justify-content: space-around;
-    }
-    #activities div:nth-of-type(3) article,
-    #activities div:nth-of-type(1) article {
-    height: 300px;
-    flex-basis: initial;
-    }
-    #activities div:nth-of-type(2) article:first-child,
-    #activities div:nth-of-type(2) article:last-child,
-    #activities div:nth-of-type(4) article:first-child,
-    #activities div:nth-of-type(4) article:last-child {
-    height: 140px;
-    flex-basis: initial;
-    }
-
+  
     /*end of activities*/
     /*footer*/
 
