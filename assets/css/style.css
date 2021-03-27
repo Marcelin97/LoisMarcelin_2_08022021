@@ -109,6 +109,7 @@ header nav ul li a {
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
   width: 40%;
+  text-overflow: ellipsis;
 }
 #searchbar form input:focus {
   /*supprimer les bordures noires dans le champ input de saisie active*/
@@ -510,21 +511,21 @@ footer div div ul li a {
       flex-wrap: wrap;
       justify-content: space-around;
     }
-    #activities div:nth-of-type(1) {/*vieux port*/
+    #activities div:nth-of-type(1), /*vieux port*/
+    #activities div:nth-of-type(3) { /*calanques*/
       flex-basis: 46%;
     }
     #activities div:nth-of-type(2) {/*fort et frioul*/
       order: 1;
-      flex-basis: 96%;
-     }
-    #activities div:nth-of-type(3) { /*calanques*/
-      flex-basis: 46%;
     }
     #activities div:nth-of-type(4) { /*notre dame de la garde et parc longchampt*/
       order: 3;
+    }
+    #activities div:nth-of-type(2), /*fort et frioul*/
+    #activities div:nth-of-type(4) { /*notre dame de la garde et parc longchampt*/
       flex-basis: 96%;
     }
-   
+  
     /*end of activities*/
     /*footer*/
 
