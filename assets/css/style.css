@@ -536,3 +536,83 @@ footer div div ul li a {
     /*footer*/
 
   }
+
+  @media only screen and (min-width: 992px) {
+
+    /*header*/
+
+    header a {
+      margin-top: 2em;
+      justify-content: flex-end;
+    }
+    header > a:nth-child(2) {
+      order: 1;
+      flex-basis: 8%;
+    }
+    header nav {
+      margin: 0 0 0 auto;
+      max-width: 350px;
+      flex-basis: 40%;
+    }
+    header nav ul li {
+      border-bottom: none;
+    }
+    header nav ul li:hover {
+      border-bottom: none;
+      border-top: 3px solid #0065fc;
+    }
+
+    /*en of header*/
+    /*most_popular*/
+
+    #most_popular {
+      border-radius: 1.2em;
+      width: 400px;
+      margin-right: 1em;
+      float: right;
+      row-gap: 8px;
+    }
+
+    /*end of most_popular*/
+    /*accomodations*/
+
+    #accomodations {
+      background-color: #f2f2f2;
+      border-radius: 1.2em;
+      width: 800px;
+      margin-left: 1em;
+      padding: 2em 2em;
+      flex-basis: 70%;
+    }
+    #accomodations, #most_popular {
+      display: flex;
+
+    }
+    
+    /*end of accomodations*/
+    /*activities*/
+
+    #activities {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    #activities div:nth-of-type(1), /*vieux port*/
+    #activities div:nth-of-type(3) { /*calanques*/
+      flex-basis: 46%;
+    }
+    #activities div:nth-of-type(2) {/*fort et frioul*/
+      order: 1;
+    }
+    #activities div:nth-of-type(4) { /*notre dame de la garde et parc longchampt*/
+      order: 3;
+    }
+    #activities div:nth-of-type(2), /*fort et frioul*/
+    #activities div:nth-of-type(4) { /*notre dame de la garde et parc longchampt*/
+      flex-basis: 96%;
+    }
+
+    
+
+  }
