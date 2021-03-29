@@ -540,9 +540,11 @@ footer div div ul li a {
   @media only screen and (min-width: 1200px) {
 
     header,
-    main {
+    main,
+    footer {
       max-width: 1440px;
-      margin-top: auto;
+      margin-right: auto;
+      margin-left: auto;
     }
     section {
       margin: auto 30px
@@ -550,6 +552,11 @@ footer div div ul li a {
 
     /*header*/
   
+    header {
+      margin-top: 0;
+      margin: 3px 0 0 auto;
+
+    }
     header img {
       margin-left: 3em;
     }
@@ -575,6 +582,9 @@ footer div div ul li a {
     header nav ul li:hover {
       border-bottom: none;
       border-top: 3px solid #0065fc;
+      margin-top: -3px;
+
+
     }
   
     /*en of header*/
