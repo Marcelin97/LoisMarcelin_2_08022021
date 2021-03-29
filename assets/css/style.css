@@ -542,13 +542,20 @@ footer div div ul li a {
     header,
     main {
       max-width: 1440px;
-      margin-right: auto;
-      margin-left: auto;
       margin-top: auto;
     }
+    section {
+      margin: auto 30px
+       }
 
     /*header*/
   
+    header img {
+      margin-left: 3em;
+    }
+    header > a {
+      margin-right: 3em;
+    }     
     header a {
       margin-top: 2em;
       justify-content: flex-end;
@@ -569,23 +576,21 @@ footer div div ul li a {
       border-bottom: none;
       border-top: 3px solid #0065fc;
     }
-
+  
     /*en of header*/
     /*most_popular*/
-
+  
     #most_popular {
-      display: flex;
       border-radius: 1.2em;
-      margin-right: 2em;
-      margin-left: 2em;
-      row-gap: 8px;
-      width: 28%;
+      width: 30%;
+      float: right;
     }
-    #most_popular {
-      order: 1;
+    #most_popular h2 {
+      margin-bottom: 20px;
     }
     #most_popular article{
       width: 100%;
+      height: 146px;
     }
     #most_popular article a figure {
       flex-basis: 40%;
@@ -598,9 +603,9 @@ footer div div ul li a {
       display: flex;
       background-color: #f2f2f2;
       border-radius: 1.2em;
-      padding: 2em 2em;
-      margin-right: 2em;
-      width: 60%;
+      width: 59%;
+      margin-left: 45px;
+      margin-left: 29px;
     }
        
     /*end of accomodations*/
@@ -613,7 +618,10 @@ footer div div ul li a {
 
     /*common on most_popular and accomodations*/
     /*activities*/
-
+       
+    #activities h2 {
+      margin-bottom: 20px;
+    }
     #activities div {
       display: flex;
     }
@@ -655,5 +663,13 @@ footer div div ul li a {
     }
 
     /*end of activities*/
+    /*footer*/
+
+    footer div {
+      margin-left: 5px;
+    }
+
+    /*footer*/
+
 
   }
