@@ -487,9 +487,11 @@ footer div div ul li a {
 
     footer >div {
       flex-direction: row !important;
+      padding: 20px;
     }
     footer div div {
       flex-basis: 30%;
+      padding: 0px;
     }
 
     /*end of footer*/
