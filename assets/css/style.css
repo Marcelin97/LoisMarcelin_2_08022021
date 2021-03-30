@@ -543,17 +543,20 @@ footer div div ul li a {
 
     header,
     main,
-    footer {
+    footer >div {
       max-width: 1440px;
       margin-right: auto;
       margin-left: auto;
     }
-    section {
-      margin: auto 30px
+    section,
+    main >div {
+      padding: 25px 30px
        }
-       main >div {
+    main >div {
          flex-direction: row-reverse;
+         justify-content: space-between;
        }
+
     /*header*/
   
     header {
@@ -614,14 +617,14 @@ footer div div ul li a {
       display: flex;
       background-color: #f2f2f2;
       border-radius: 1.2em;
-      margin-left: 45px;
-      margin-left: 29px;
       flex-basis: 67%;
     }
        
     /*end of accomodations*/
     /*activities*/
-       
+    #activities {
+      justify-content: space-between;
+    }   
     #activities h2 {
       margin-bottom: 20px;
     }
@@ -668,9 +671,7 @@ footer div div ul li a {
     /*end of activities*/
     /*footer*/
 
-    footer div {
-      margin-left: 5px;
-    }
+  
 
     /*footer*/
 
