@@ -12,7 +12,6 @@ section {
 a {
   text-decoration: none;
 }
-
 img {
   object-fit: cover;
 }
@@ -344,7 +343,7 @@ footer div div ul li a {
 
 /*end of footer*/
 
-@media only screen and (min-width: 576px) {
+  @media only screen and (min-width: 576px) {
 
   /*search bar*/
 
@@ -386,7 +385,7 @@ footer div div ul li a {
     flex-basis: 80%;
   }
 
-  /*filters*/
+  /*end of filters*/
   /*most popular*/
 
   #most_popular article a figure {
@@ -443,233 +442,240 @@ footer div div ul li a {
   }
 
   /*end of activities*/
-
-}
+  }
   
   @media only screen and (min-width: 768px) {
 
-    /*common to several elements*/
+  /*common to several elements*/
 
-    section {
-      padding: 25px 20px
-    }
+  section {
+    padding: 25px 20px
+  }
 
-    /*common to several elements*/
-    /*most_popular*/
+  /*common to several elements*/
+  /*most_popular*/
 
-    #most_popular article {
-      width: 80%;
-      align-self: center;
-    }
+  #most_popular article {
+    width: 80%;
+    align-self: center;
+  }
 
-    /*end of most_popular*/
-    /*accomodations*/
+  /*end of most_popular*/
+  /*accomodations*/
 
-    #accomodations {
-      justify-content: space-around;
-    }
-    #accomodations article {
-      flex-basis: 45%;
-    }
-    #accomodations a {
-      flex-basis: 100%;
-    }
+  #accomodations {
+    justify-content: space-around;
+  }
+  #accomodations article {
+    flex-basis: 45%;
+  }
+  #accomodations a {
+    flex-basis: 100%;
+  }
 
-    /*end of accomodations*/
-    /*activities*/
+  /*end of accomodations*/
+  /*activities*/
 
-    #activities div article {
-      height: 200px;
-    }
+  #activities div article {
+    height: 200px;
+  }
 
-    /*activities*/
-    /*footer*/
+  /*activities*/
+  /*footer*/
 
-    footer >div {
-      flex-direction: row !important;
-      padding: 40px 20px;
-    }
-    footer div div {
-      flex-basis: 30%;
-      padding: 0px;
-    }
+  footer >div {
+    flex-direction: row !important;
+    padding: 40px 20px;
+    justify-content: space-between;
+  }
+  footer div div {
+    flex-basis: 30%;
+    padding: 0px;
+  }
 
-    /*end of footer*/
-
+  /*end of footer*/
   }
 
   @media only screen and (min-width: 992px) {
 
-    /*accomodations*/
+  /*accomodations*/
 
-    #accomodations article {
-      flex-basis: 32%;
-    }
+  #accomodations article {
+    flex-basis: 32%;
+  }
 
-    /*end of accomodations*/
-    /*activities*/
+  /*end of accomodations*/
+  /*activities*/
 
-    #activities {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    #activities div:nth-of-type(1), /*vieux port*/
-    #activities div:nth-of-type(3) { /*calanques*/
-      flex-basis: 46%;
-    }
-    #activities div:nth-of-type(2) {/*fort et frioul*/
-      order: 1;
-    }
-    #activities div:nth-of-type(4) { /*notre dame de la garde et parc longchampt*/
-      order: 3;
-    }
-    #activities div:nth-of-type(2), /*fort et frioul*/
-    #activities div:nth-of-type(4) { /*notre dame de la garde et parc longchampt*/
-      flex-basis: 96%;
-    }
+  #activities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #activities div:nth-of-type(1), /*Vieux port*/
+  #activities div:nth-of-type(3) { /*Calanques*/
+    flex-basis: 46%;
+  }
+  #activities div:nth-of-type(2) {/*Fort et Frioul*/
+    order: 1;
+  }
+  #activities div:nth-of-type(4) { /*Notre-Dame de la garde et Parc longchampt*/
+    order: 3;
+  }
+  #activities div:nth-of-type(2), /*Fort et Frioul*/
+  #activities div:nth-of-type(4) { /*Notre-Dame de la garde et Parc longchampt*/
+    flex-basis: 96%;
+  }
   
-    /*end of activities*/
+  /*end of activities*/
+  /*footer*/
 
+  #footer >div {
+    justify-content: flex-start;
+  }
+
+  /*end of footer*/
   }
 
   @media only screen and (min-width: 1200px) {
 
-    header,
-    main,
-    footer >div {
-      max-width: 1440px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-    section,
-    main >div {
-      padding: 25px 30px
-       }
-    main >div {
-        display: flex;
-         flex-direction: row-reverse;
-         justify-content: space-between;
-       }
+  /*common to several elements*/
 
-    /*header*/
+  header,
+  main,
+  footer >div {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  section,
+  main >div {
+    padding: 25px 30px
+  }
+  main >div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  /*common to several elements*/
+  /*header*/
   
-    header {
-      margin-top: 0;
-    }
-    header img {
-      margin-left: 3em;
-      margin-top: auto;
-    }
-    header > a {
-      margin-right: 3em;
-    }     
-    header a {
-      margin-top: 2em;
-      justify-content: flex-end;
-    }
-    header > a:nth-child(2) {
-      order: 1;
-      flex-basis: 8%;
-    }
-    header nav {
-      margin: 0 0 0 auto;
-      max-width: 350px;
-      flex-basis: 40%;
-    }
-    header nav ul li {
-      border-bottom: none;
-      border-top: 3px solid white;
-
-    }
-    header nav ul li:hover {
-      border-bottom: none;
-      border-top: 3px solid #0065fc;
-    }
+  header {
+    margin-top: 0;
+  }
+  header img {
+    margin-left: 30px;
+    margin-top: 1.5em;
+  } 
+  header > a {
+    margin-right: 30px;
+  } 
+  header a {
+    margin-top: 1.5em;
+    justify-content: flex-end;
+  }
+  header > a:nth-child(2) {
+    order: 1;
+    flex-basis: 8%;
+  }
+  header nav {
+    margin: 0 0 0 auto;
+    max-width: 350px;
+    flex-basis: 40%;
+  }
+  header nav ul li {
+    border-bottom: none;
+    border-top: 3px solid white;
+  }
+  header nav ul li:hover {
+    border-bottom: none;
+    border-top: 3px solid #0065fc;
+  }
   
-    /*en of header*/
-    /*most_popular*/
+  /*end of header*/
+  /*filters*/
+
+  #filters p {
+    margin-bottom: 0px;
+  }
+
+  /*end of filters*/
+  /*most_popular*/
   
-    #most_popular {
-      border-radius: 1.2em;
-      flex-basis: 30%;      
-    }
-    #most_popular h2 {
-      margin-bottom: 20px;
-    }
-    #most_popular article{
-      width: 100%;
-      height: 146px;
-    }
-    #most_popular article a figure {
-      flex-basis: 40%;
-    }
+  #most_popular {
+    border-radius: 1.2em;
+    flex-basis: 30%;      
+  }
+  #most_popular h2 {
+    margin-bottom: 20px;
+  }
+  #most_popular article {
+    width: 100%;
+    height: 146px;
+  }
+  #most_popular article a figure {
+    flex-basis: 40%;
+  }
 
-    /*end of most_popular*/
-    /*accomodations*/
+  /*end of most_popular*/
+  /*accomodations*/
 
-    #accomodations {
-      display: flex;
-      background-color: #f2f2f2;
-      border-radius: 1.2em;
-      flex-basis: 67%;
-    }
+  #accomodations {
+    display: flex;
+    background-color: #f2f2f2;
+    border-radius: 1.2em;
+    flex-basis: 67%;
+  }
        
-    /*end of accomodations*/
-    /*activities*/
-    #activities {
-      justify-content: space-between;
-    }   
-    #activities h2 {
-      margin-bottom: 20px;
-    }
-    #activities div {
-      display: flex;
-    }
-    #activities div article {
-      height: 70%;
-    }
-    #activities div:nth-of-type(1), /*Vieux port*/
-    #activities div:nth-of-type(3) { /*Calanques*/
-      flex-basis: 22%;
-    }
-    #activities div:nth-of-type(3) { /*Calanques*/
-      order: 3;
-    }
-    #activities div:nth-of-type(2), /*Fort et Frioul*/
-    #activities div:nth-of-type(4) { /*Notre dame de la garde et parc longchampt*/
-      flex-basis: 22%;
-      flex-direction: column;
-    }
+  /*end of accomodations*/
+  /*activities*/
 
-    #activities div:nth-of-type(1) article, /*Vieux port*/
-    #activities div:nth-of-type(3) article { /*Calanques*/
-      height: 27em;
-    }
-   #activities div:nth-of-type(2) article:first-child {/*Fort de Pomègues*/
-      flex-basis: initial;
-      height: 15em;
-    }
-    #activities div:nth-of-type(2) article:last-child {/*Frioul*/
-      flex-basis: initial;
-      height: 10em;
-    }
-    #activities div:nth-of-type(4) article:first-child {/*Notre-dame*/
-      flex-basis: initial;
-      height: 10em;
-    }
-    #activities div:nth-of-type(4) article:last-child {/*Pars longchamp*/
-      flex-basis: initial;
-      height: 15em;
-    }
+  #activities {
+    justify-content: space-between;
+  }   
+  #activities h2 {
+    margin-bottom: 20px;
+  }
+  #activities div {
+    display: flex;
+  }
+  #activities div article {
+    height: 70%;
+  }
+  #activities div:nth-of-type(1), /*Vieux port*/
+  #activities div:nth-of-type(3) { /*Calanques*/
+    flex-basis: 22%;
+  }
+  #activities div:nth-of-type(3) { /*Calanques*/
+    order: 3;
+  }
+  #activities div:nth-of-type(2), /*Fort et Frioul*/
+  #activities div:nth-of-type(4) { /*Notre-dame de la garde et Parc longchampt*/
+    flex-basis: 22%;
+    flex-direction: column;
+  }
+  #activities div:nth-of-type(1) article, /*Vieux port*/
+  #activities div:nth-of-type(3) article { /*Calanques*/
+    height: 27em;
+  }
+  #activities div:nth-of-type(2) article:first-child {/*Fort de Pomègues*/
+    flex-basis: initial;
+    height: 15em;
+  }
+  #activities div:nth-of-type(2) article:last-child {/*Frioul*/
+    flex-basis: initial;
+    height: 10em;
+  }
+  #activities div:nth-of-type(4) article:first-child {/*Notre-dame*/
+    flex-basis: initial;
+    height: 10em;
+  }
+  #activities div:nth-of-type(4) article:last-child {/*Parc longchamp*/
+    flex-basis: initial;
+    height: 15em;
+  }
 
-    /*end of activities*/
-    /*footer*/
-
-  
-
-    /*footer*/
-
-
+  /*end of activities*/
   }
