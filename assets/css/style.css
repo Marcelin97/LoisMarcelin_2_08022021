@@ -553,12 +553,11 @@ footer div div ul li a {
     /*header*/
   
     header {
-      margin-top: 0;
-      margin: 3px 0 0 auto;
-
+      margin: 3px 0 0 0;
     }
     header img {
       margin-left: 3em;
+      margin-top: auto;
     }
     header > a {
       margin-right: 3em;
