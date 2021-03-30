@@ -142,14 +142,15 @@ header nav ul li a {
 /*filters*/
 
 #filters {
-  display: inline-flex;
   row-gap: 20px;
 }
 #filters h2 {
   flex-basis: 100%;
+  margin-bottom: 10px;
 }
 #filters ul {
   flex-basis: 100%;
+  margin-bottom: 10px;
 }
 #filters ul li {
   /* le texte et l'icone*/
@@ -372,13 +373,14 @@ footer div div ul li a {
   /*filters*/
 
   #filters {
-    display: flex;
-    flex-direction: row;
     line-height: 2em;
   }
   #filters h2 {
     flex-basis: 10%;
     margin-right: 1em;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 0px;
   }
   #filters ul {
     flex-basis: 80%;
@@ -549,9 +551,14 @@ footer div div ul li a {
     section {
       margin: auto 30px
        }
-
+       main >div {
+         flex-direction: row-reverse;
+       }
     /*header*/
   
+    header {
+      margin-top: 0;
+    }
     header img {
       margin-left: 3em;
       margin-top: auto;
@@ -574,13 +581,12 @@ footer div div ul li a {
     }
     header nav ul li {
       border-bottom: none;
+      border-top: 3px solid white;
+
     }
     header nav ul li:hover {
       border-bottom: none;
       border-top: 3px solid #0065fc;
-      margin-top: -3px;
-
-
     }
   
     /*en of header*/
@@ -588,8 +594,7 @@ footer div div ul li a {
   
     #most_popular {
       border-radius: 1.2em;
-      width: 30%;
-      float: right;
+      flex-basis: 30%;      
     }
     #most_popular h2 {
       margin-bottom: 20px;
@@ -609,20 +614,12 @@ footer div div ul li a {
       display: flex;
       background-color: #f2f2f2;
       border-radius: 1.2em;
-      width: 59%;
       margin-left: 45px;
       margin-left: 29px;
+      flex-basis: 67%;
     }
        
     /*end of accomodations*/
-    /*common on most_popular and accomodations*/
-
-    #accomodations,
-    #most_popular {
-      display: inline-flex;
-    }
-
-    /*common on most_popular and accomodations*/
     /*activities*/
        
     #activities h2 {
