@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-  box-sizing: border-box; /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* réinitialise le modèle de boîte à border-box pour tous les éléments HTML*/
   font-family: "Raleway", sans-serif; /*Police*/
   color: #101010;
   font-size: 1em;
@@ -13,7 +21,8 @@ a {
   text-decoration: none;
 }
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #searchbar h1,
 #filters h2,
@@ -41,8 +50,12 @@ li i {
 /*page header*/
 
 header {
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -54,16 +67,21 @@ header > a {
   color: #0065fc;
 }
 header nav {
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin-top: 10px;
 }
 header nav ul {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
 }
 header nav ul li {
-  justify-content: center;
-  flex-basis: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   border-bottom: 3px solid #f2f2f2;
   font-weight: normal;
 }
@@ -89,7 +107,8 @@ header nav ul li a {
 }
 #searchbar form {
   max-width: 350px;
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   height: 50px;
 }
 #searchbar form label {
@@ -102,17 +121,44 @@ header nav ul li a {
 }
 #searchbar form input {
   color: #101010;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 0 15px;
   border: none;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
   width: 40%;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 #searchbar form input:focus {
   /*supprimer les bordures noires dans le champ input de saisie active*/
   outline: none;
+}
+#searchbar form input::-webkit-input-placeholder {
+  color: black !important;
+  font-size: 1.2em;
+  font-weight: 700;
+  opacity: 1; /*pour que le noir dans firefox reste bien noir*/
+}
+#searchbar form input::-moz-placeholder {
+  color: black !important;
+  font-size: 1.2em;
+  font-weight: 700;
+  opacity: 1; /*pour que le noir dans firefox reste bien noir*/
+}
+#searchbar form input:-ms-input-placeholder {
+  color: black !important;
+  font-size: 1.2em;
+  font-weight: 700;
+  opacity: 1; /*pour que le noir dans firefox reste bien noir*/
+}
+#searchbar form input::-ms-input-placeholder {
+  color: black !important;
+  font-size: 1.2em;
+  font-weight: 700;
+  opacity: 1; /*pour que le noir dans firefox reste bien noir*/
 }
 #searchbar form input::placeholder {
   color: black !important;
@@ -144,11 +190,13 @@ header nav ul li a {
   row-gap: 20px;
 }
 #filters h2 {
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin-bottom: 10px;
 }
 #filters ul {
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin-bottom: 10px;
 }
 #filters ul li {
@@ -157,7 +205,9 @@ header nav ul li a {
   border-top: 1.5px solid #d9d9d9;
   border-right: 1.5px solid #d9d9d9;
   border-radius: 25px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 15px;
   padding-right: 15px;
   height: 2.5em;
@@ -185,9 +235,14 @@ header nav ul li a {
 #filters p {
   margin-bottom:20px;
   line-height: 1.7em;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 #filters p i {
   /*le i de info*/
@@ -207,11 +262,16 @@ header nav ul li a {
 
 #most_popular {
   background-color: #f2f2f2;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 10px;
 }
 #most_popular h2 {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 30px;
 }
 #most_popular article {
@@ -225,7 +285,8 @@ header nav ul li a {
 }
 #most_popular article a figure {
   height: 100%;
-  flex-basis: 40%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 #most_popular article a figure img {
   border-top-left-radius: 10px;
@@ -233,7 +294,8 @@ header nav ul li a {
   max-width: 100%;
 }
 #most_popular article a div {
-  flex-basis: 60%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   padding: 10px;
 }
 #most_popular article a div p {
@@ -253,7 +315,8 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 #accomodations article {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   background-color: white;
   height: 200px;
@@ -299,7 +362,8 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 #activities div article {
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   background-color: white;
   height: 170px;
@@ -309,7 +373,9 @@ header nav ul li a {
   height: 100%;
 }
 #activities div article a figure div {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 60%;
 }
 #activities div article a figure div img {
@@ -319,8 +385,11 @@ header nav ul li a {
   width: 100%;
 }
 #activities div article a figure figcaption {
-  align-items: center;
-  flex-basis: 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 55px;
+      flex-basis: 55px;
   padding: 15px;
 }
 
@@ -352,8 +421,13 @@ footer div div ul li a {
   }
   #searchbar form button {
     border-radius: 0 1em 1em 0;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     line-height: 3em;
     width: initial;
     margin-left: 0;
@@ -375,70 +449,94 @@ footer div div ul li a {
     line-height: 2em;
   }
   #filters h2 {
-    flex-basis: 10%;
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
     margin-right: 1em;
     float: left;
     margin-right: 15px;
     margin-bottom: 0px;
   }
   #filters ul {
-    flex-basis: 80%;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
   }
 
   /*end of filters*/
   /*most popular*/
 
   #most_popular article a figure {
-    flex-basis: 60%;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
   }
   #most_popular article a .description {
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
 
   /*end of most popular*/
   /*accomodations*/
 
   #accomodations {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   #accomodations h2 {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   #accomodations article {
-    flex-basis: 48%;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
 
   /*end of accomodations*/
   /*activities*/
 
   #activities h2 {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   #activities div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;    
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;    
   }
   #activities div article {
     height: 200px;
   }
   #activities div:nth-of-type(1) article,
   #activities div:nth-of-type(3) article {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   #activities div:nth-of-type(2) article:first-child {
-    flex-basis: 54%;
+    -ms-flex-preferred-size: 54%;
+        flex-basis: 54%;
   }
   #activities div:nth-of-type(2) article:last-child {
-    flex-basis: 43%;
+    -ms-flex-preferred-size: 43%;
+        flex-basis: 43%;
   }
   #activities div:nth-of-type(4) article:first-child {
-    flex-basis: 43%;
+    -ms-flex-preferred-size: 43%;
+        flex-basis: 43%;
   }
   #activities div:nth-of-type(4) article:last-child {
-    flex-basis: 54%;
+    -ms-flex-preferred-size: 54%;
+        flex-basis: 54%;
   }
 
   /*end of activities*/
@@ -457,20 +555,25 @@ footer div div ul li a {
 
   #most_popular article {
     width: 80%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 
   /*end of most_popular*/
   /*accomodations*/
 
   #accomodations {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   #accomodations article {
-    flex-basis: 45%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
   }
   #accomodations a {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 
   /*end of accomodations*/
@@ -484,12 +587,18 @@ footer div div ul li a {
   /*footer*/
 
   footer >div {
-    flex-direction: row !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
     padding: 40px 20px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   footer div div {
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
     padding: 0px;
   }
 
@@ -501,38 +610,54 @@ footer div div ul li a {
   /*accomodations*/
 
   #accomodations article {
-    flex-basis: 32%;
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
   }
 
   /*end of accomodations*/
   /*activities*/
 
   #activities {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   #activities div:nth-of-type(1), /*Vieux port*/
   #activities div:nth-of-type(3) { /*Calanques*/
-    flex-basis: 46%;
+    -ms-flex-preferred-size: 46%;
+        flex-basis: 46%;
   }
   #activities div:nth-of-type(2) {/*Fort et Frioul*/
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   #activities div:nth-of-type(4) { /*Notre-Dame de la garde et Parc longchampt*/
-    order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   #activities div:nth-of-type(2), /*Fort et Frioul*/
   #activities div:nth-of-type(4) { /*Notre-Dame de la garde et Parc longchampt*/
-    flex-basis: 96%;
+    -ms-flex-preferred-size: 96%;
+        flex-basis: 96%;
   }
   
   /*end of activities*/
   /*footer*/
 
   #footer >div {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   /*end of footer*/
@@ -554,9 +679,16 @@ footer div div ul li a {
     padding: 25px 30px
   }
   main >div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   /*common to several elements*/
@@ -574,16 +706,22 @@ footer div div ul li a {
   } 
   header a {
     margin-top: 1.5em;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   header > a:nth-child(2) {
-    order: 1;
-    flex-basis: 8%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-preferred-size: 8%;
+        flex-basis: 8%;
   }
   header nav {
     margin: 0 0 0 auto;
     max-width: 350px;
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
   header nav ul li {
     border-bottom: none;
@@ -606,7 +744,8 @@ footer div div ul li a {
   
   #most_popular {
     border-radius: 1.2em;
-    flex-basis: 30%;      
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;      
   }
   #most_popular h2 {
     margin-bottom: 20px;
@@ -616,29 +755,37 @@ footer div div ul li a {
     height: 146px;
   }
   #most_popular article a figure {
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
 
   /*end of most_popular*/
   /*accomodations*/
 
   #accomodations {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #f2f2f2;
     border-radius: 1.2em;
-    flex-basis: 67%;
+    -ms-flex-preferred-size: 67%;
+        flex-basis: 67%;
   }
        
   /*end of accomodations*/
   /*activities*/
 
   #activities {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }   
   #activities h2 {
     margin-bottom: 20px;
   }
   #activities div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   #activities div article {
@@ -646,34 +793,45 @@ footer div div ul li a {
   }
   #activities div:nth-of-type(1), /*Vieux port*/
   #activities div:nth-of-type(3) { /*Calanques*/
-    flex-basis: 22%;
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
   }
   #activities div:nth-of-type(3) { /*Calanques*/
-    order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   #activities div:nth-of-type(2), /*Fort et Frioul*/
   #activities div:nth-of-type(4) { /*Notre-dame de la garde et Parc longchampt*/
-    flex-basis: 22%;
-    flex-direction: column;
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #activities div:nth-of-type(1) article, /*Vieux port*/
   #activities div:nth-of-type(3) article { /*Calanques*/
     height: 27em;
   }
   #activities div:nth-of-type(2) article:first-child {/*Fort de Pomègues*/
-    flex-basis: initial;
+    -ms-flex-preferred-size: initial;
+        flex-basis: initial;
     height: 15em;
   }
   #activities div:nth-of-type(2) article:last-child {/*Frioul*/
-    flex-basis: initial;
+    -ms-flex-preferred-size: initial;
+        flex-basis: initial;
     height: 10em;
   }
   #activities div:nth-of-type(4) article:first-child {/*Notre-dame*/
-    flex-basis: initial;
+    -ms-flex-preferred-size: initial;
+        flex-basis: initial;
     height: 10em;
   }
   #activities div:nth-of-type(4) article:last-child {/*Parc longchamp*/
-    flex-basis: initial;
+    -ms-flex-preferred-size: initial;
+        flex-basis: initial;
     height: 15em;
   }
 
