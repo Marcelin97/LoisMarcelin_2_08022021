@@ -333,6 +333,7 @@ header nav ul li a {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   max-height: 100%;
+  object-position: 60% 60%;
 }
 #accomodations article a div {
   margin: 10px;
@@ -383,6 +384,7 @@ header nav ul li a {
   border-top-left-radius: 15px;
   height: 100%;
   width: 100%;
+  object-position: 50% 30%;
 }
 #activities div article a figure figcaption {
   -webkit-box-align: center;
@@ -498,6 +500,9 @@ footer div div ul li a {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
+  #accomodations article a figure img {
+    object-position: 50% 65%;
+  }
 
   /*end of accomodations*/
   /*activities*/
@@ -558,6 +563,9 @@ footer div div ul li a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  #most_popular article a figure img {
+    object-position: 50% 65%;
   }
 
   /*end of most_popular*/
