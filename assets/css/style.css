@@ -384,7 +384,6 @@ header nav ul li a {
   border-top-left-radius: 15px;
   height: 100%;
   width: 100%;
-  object-position: 50% 30%;
 }
 #activities div article a figure figcaption {
   -webkit-box-align: center;
